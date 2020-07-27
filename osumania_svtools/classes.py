@@ -2,7 +2,7 @@
 クラス置き場
 """
 
-from typing import NamedTuple, Optional, Union
+from typing import NamedTuple, Optional, Union, List
 
 class TimingPoint(NamedTuple):
 	"""
@@ -100,3 +100,10 @@ class HitObject(NamedTuple):
 	hitsound: int = 0
 	end_offset: Optional[int] = None
 	customsound: str = "0:0:0:0:"
+
+class ParsedBeatmap(NamedTuple):
+	"""
+	作成中
+	"""
+	TimingPoints: List[TimingPoint]
+	HitObjects: List[HitObject]
