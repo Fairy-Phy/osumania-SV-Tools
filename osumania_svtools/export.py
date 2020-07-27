@@ -39,7 +39,7 @@ def hitobject(hit_object: HitObject) -> str:
 	str
 		-> HitObject
 	"""
-	if LN:
+	if hit_object.LN:
 		return "{0},192,{1},128,{2},{3}:{4}".format(hit_object.key_position, hit_object.offset, hit_object.hitsound, hit_object.end_offset, hit_object.customsound)
 	else:
 		return "{0},192,{1},1,{2},{3}".format(hit_object.key_position, hit_object.offset, hit_object.hitsound, hit_object.customsound)
