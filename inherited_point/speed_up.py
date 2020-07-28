@@ -12,6 +12,8 @@ sample_index = 1
 volume = 100
 effects = 0
 
+## Main ##
+
 # どうやらコンソールのパスからの指定らしい...
 with open("./timingpoint.txt", mode='w') as exportfile:
 	offset_scale: float = (end_scale - start_scale) / (end_offset - start_offset)

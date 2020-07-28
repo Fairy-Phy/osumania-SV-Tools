@@ -103,7 +103,19 @@ class HitObject(NamedTuple):
 
 class ParsedBeatmap(NamedTuple):
 	"""
-	作成中
+	```
+	ParsedBeatmap(TimingPoints: List[TimingPoint], HitObjects: List[HitObject])
+	```
+
+	NamedTuple継承のパーサー用のTimingPointとHitObjectを保存するクラス
+
+	引数・属性
+	----------
+	TimingPoints : List[TimingPoint]
+		-> TimingPointクラスの配列
+	
+	HitObjects : List[HitObject]
+		-> HitObjectクラスの配列
 	"""
 	TimingPoints: List[TimingPoint]
 	HitObjects: List[HitObject]

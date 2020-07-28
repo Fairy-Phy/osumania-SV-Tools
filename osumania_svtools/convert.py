@@ -3,6 +3,7 @@
 """
 
 from .classes import TimingPoint, HitObject
+from .constant import max_offset
 
 def time_to_offset(time_text: str) -> int:
 	"""
@@ -50,11 +51,6 @@ def time_to_offset(time_text: str) -> int:
 
 	return offset
 
-"""
-説明: TimingPointの文字列を各情報に変換してTimingPointクラスで出力します
-
-text: TimingPointの文字列
-"""
 def text_to_timingpoint(text: str) -> TimingPoint:
 	"""
 	TimingPointの文字列を各情報に変換してTimingPointクラスで出力します
@@ -137,3 +133,23 @@ def text_to_hitobject(text: str) -> HitObject:
 			return HitObject(key_position=key_position, offset=offset, LN=LN, hitsound=hitsound, customsound=customsound)
 	except ValueError:
 		raise ValueError("text is not allowed format")
+
+
+def voidobject(key_position: int, offset: int) -> HitObject:
+	"""
+	引数から判定のないヒットオブジェクト(シングルノーツのみ)のHitObjectクラスを生成します
+
+	引数
+	----
+	key_position : int
+		-> キーポジション、1から入れる場合はkey_assetから参照したものを入れてください
+
+	offset : int
+		-> (配置する)オフセット値
+
+	戻り値
+	------
+	HitObject
+		-> 空ノーツのHitObjectクラス
+	"""
+	return HitObject(key_position, max_offset, True, end_offset=offset)
