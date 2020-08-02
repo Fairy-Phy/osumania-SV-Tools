@@ -1,0 +1,4 @@
+{
+    "mypy.executable": "%USERPROFILE%\\.mypyls\\Scripts\\mypyls.exe",
+    "mypy.configFile": ""
+}
