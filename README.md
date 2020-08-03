@@ -22,7 +22,9 @@ osu!maniaのSVを生成するためのツールのはずです
 
 ### その他
 
+* Mypyの型チェック
 * 私のクソPC
 
 ## こらぼれーたー・こんとりびゅーたー
+
 * [@Komasan5364](https://github.com/Komasan5364)

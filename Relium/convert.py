@@ -128,7 +128,7 @@ def text_to_hitobject(text: str) -> HitObject:
 
 			return HitObject(key_position=key_position, offset=offset, LN=LN, hitsound=hitsound, end_offset=end_offset, customsound=customsound)
 		else:
-			customsound: str = text_split[5]
+			customsound = text_split[5]
 
 			return HitObject(key_position=key_position, offset=offset, LN=LN, hitsound=hitsound, customsound=customsound)
 	except ValueError:

@@ -2,7 +2,7 @@
 .osuファイルパーサー
 by @Komasan5364
 """
-
+from typing import List, Optional
 from .classes import ParsedBeatmap, TimingPoint, HitObject
 from .convert import text_to_timingpoint, text_to_hitobject
 from .export import timingpoint, hitobject
@@ -26,8 +26,8 @@ def parsefile(beatmap_path: str) -> ParsedBeatmap:
 	FileNotFoundError
 		-> パスにファイルが見つかりません、絶対パスの場合は``r"絶対パス"``を使うと良いかもしれません
 	"""
-	otp = []
-	oho = []
+	otp: List[TimingPoint] = []
+	oho: List[HitObject] = []
 	with open(beatmap_path, mode='r') as b:
 		while not b.readline().startswith("[TimingPoints]"):
 			pass
@@ -35,26 +35,22 @@ def parsefile(beatmap_path: str) -> ParsedBeatmap:
 			l = b.readline()
 			if l.startswith("[HitObjects]"):
 				break
-			tp = None
 			try:
-				tp = text_to_timingpoint(l)
+				tp: TimingPoint = text_to_timingpoint(l)
+				otp.append(tp)
 			except ValueError:
 				pass
-			if tp != None:
-				otp.append(tp)
 		
 		while True:
 			lp = b.tell()
 			l = b.readline().replace('\n', '').replace('\r', '')
 			if lp == b.tell():
 				break
-			ho = None
 			try:
-				ho = text_to_hitobject(l)
+				ho: HitObject = text_to_hitobject(l)
+				oho.append(ho)
 			except ValueError:
 				pass
-			if ho != None:
-				oho.append(ho)
 		
 		return ParsedBeatmap(otp, oho)
 

@@ -1,4 +1,4 @@
 {
-    "mypy.executable": "%USERPROFILE%\\.mypyls\\Scripts\\mypyls.exe",
-    "mypy.configFile": ""
+    "mypy.executable": "F:/Developfiles/Relium/.mypyls/Scripts/mypyls.exe",
+    "mypy.configFile": "F:/Developfiles/Relium/mypy.ini"
 }
