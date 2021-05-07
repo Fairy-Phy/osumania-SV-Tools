@@ -19,9 +19,9 @@ key_asset : List[List[int]]
 	-> キーとポジションのリストです。1つ目がキーの値です、0, 11, 13, 15, 17, 19以上は非対応です。2つ目がポジションです、左を0として順番に並んでいます
 """
 
-zero_bpm: float = 1.7976931348623158e+308
+zero_bpm: float = 1E+100
 
-inf_bpm: float = 4.9406564584124654e-324
+inf_bpm: float = 1E-100
 
 max_offset: int = 2147483647
 

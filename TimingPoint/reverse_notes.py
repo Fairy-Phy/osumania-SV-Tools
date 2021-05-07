@@ -1,8 +1,6 @@
-from osumania_svtools import calcurate, classes, parser, constant, convert
+from Relium import calcurate, classes, parser, constant, convert
 
-# 作成中(調整中)
-
-source_file = r"D:\\osu!_mania\\Songs\\beatmap-637228812044211611-mu_on\\Test - Mu on ([Fairy]Phy) [reverse test].osu"
+source_file = r""
 
 target_start_offset = 2500
 target_end_offset = 4000

@@ -1,15 +1,15 @@
-from osumania_svtools import calcurate, export, classes
+from Relium import calcurate, export, classes
 
-start_offset = 16719
-end_offset = 20411
+start_offset = 144570
+end_offset = 153297 - 1
 
 start_scale = 0.5
-end_scale = 1.5
+end_scale = 1.0
 
 beat = 4
 sample_set = 1
-sample_index = 1
-volume = 100
+sample_index = 0
+volume = 60
 effects = 0
 
 ## Main ##

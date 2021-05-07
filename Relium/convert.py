@@ -40,7 +40,7 @@ def time_to_offset(time_text: str) -> int:
 		if list_count == 0:
 			offset += time * 60 * 1000
 		elif list_count == 1:
-			offset += time * 100
+			offset += time * 1000
 		elif list_count == 2:
 			offset += time
 		else:
@@ -80,7 +80,7 @@ def text_to_timingpoint(text: str) -> TimingPoint:
 		sample_set = int(text_split[3])
 		sample_index = int(text_split[4])
 		volume = int(text_split[5])
-		inherited: bool = True if text_split[6] == 0 else False
+		inherited: bool = True if int(text_split[6]) == 0 else False
 		effects = int(text_split[7])
 
 		beat_length = -float(text_split[1]) if inherited else float(text_split[1])

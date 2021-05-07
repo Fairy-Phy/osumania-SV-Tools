@@ -41,5 +41,6 @@ from .export import hitobject as export_hitobject
 from .export import voidobject as export_voidobject
 from .classes import TimingPoint
 from .classes import HitObject
+from .classes import ParsedBeatmap
 from .parser import parsefile
 from .parser import parsesave

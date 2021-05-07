@@ -1,32 +1,30 @@
-from osumania_svtools import calcurate, classes, parser, constant
+from Relium import calcurate, classes, parser, constant
 
-# 作成中(調整中)
+source_file = r""
 
-source_file = r"D:\\osu!_mania\\Songs\\beatmap-637318725988657140-Kairiki Bear+Crusher - Electrostatic Human (Crusher Remix) ft. Hatsune Miku English\\Kairiki Bear+Crusher ft. Hatsune Miku - Electrostatic Human (Crusher Remix) ([Fairy]Phy) [Jack+SV].osu"
+target_start_offset = 125342
+target_end_offset = 125479
 
-target_start_offset = 57227
-target_end_offset = 73923
+avgbpm = 220
 
-avgbpm = 115
-
-increase = 110
+increase = 75
 
 beat = 4
 sample_set = 1
-sample_index = 1
-volume = 100
-effects = 1
+sample_index = 0
+volume = 60
+effects = 0
 
-End_kiai = True
+End_kiai = False
 
+# 0 => start zero, for end. 1 => from start, end undo
 mode = 1
 
 ## Main ##
 
 parsed_map = parser.parsefile(source_file)
 
-target_hitobjects = [output for output in parsed_map.HitObjects if output.offset >=
-					 target_start_offset and output.offset <= target_end_offset]
+target_hitobjects = [output for output in parsed_map.HitObjects if output.offset >= target_start_offset and output.offset <= target_end_offset]
 
 last_process_offset = 0
 result_object = classes.ParsedBeatmap([], [])

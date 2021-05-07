@@ -28,7 +28,7 @@ def parsefile(beatmap_path: str) -> ParsedBeatmap:
 	"""
 	otp: List[TimingPoint] = []
 	oho: List[HitObject] = []
-	with open(beatmap_path, mode='r') as b:
+	with open(beatmap_path, mode='r', encoding="utf-8_sig") as b:
 		while not b.readline().startswith("[TimingPoints]"):
 			pass
 		while True:
