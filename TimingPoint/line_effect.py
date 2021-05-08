@@ -1,5 +1,10 @@
 from Relium import calcurate, classes, export
 
+"""
+拍子線を画面がspaceの間隔で追加します
+最近ではskinに拍子線offが多いので使っても意味がない...
+"""
+
 start_offset = 100933
 end_offset = 101068
 

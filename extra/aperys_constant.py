@@ -1,3 +1,7 @@
+"""
+アペリーの定数
+"""
+
 def aperys_constant(digit: int) -> str:
 	from sympy import N, zeta
 	return str(N("zeta(3)", digit))

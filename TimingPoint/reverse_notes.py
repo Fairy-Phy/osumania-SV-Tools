@@ -1,9 +1,14 @@
 from Relium import calcurate, classes, parser, constant, convert
 
+"""
+レーンの動きを逆向きのように見せかけます
+まだ作成段階中なので不具合が多いです
+"""
+
 source_file = r""
 
-target_start_offset = 2500
-target_end_offset = 4000
+target_start_offset = 29730
+target_end_offset = 31830
 
 avgbpm = 60
 

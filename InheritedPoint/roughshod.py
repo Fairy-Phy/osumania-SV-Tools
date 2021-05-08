@@ -1,5 +1,9 @@
 from Relium import calcurate, export, classes
 
+"""
+瞬間的に低速→高速を繰り返して荒ぶっているように見せかけます
+"""
+
 start_offset = 71585
 end_offset = 72385
 

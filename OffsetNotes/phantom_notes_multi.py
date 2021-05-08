@@ -1,5 +1,10 @@
 import Relium
 
+"""
+全部からノーツに変換します
+変換前に1つでもLNが配置されてるとぐちゃぐちゃになります
+"""
+
 osu_file = r""
 
 parse_file = Relium.parsefile(osu_file)

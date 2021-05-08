@@ -1,6 +1,10 @@
 from Relium import calcurate, export, classes
 import math
 
+"""
+2次間数的にstart_scaleからmax_scaleまでをstart_offsetからend_offsetの間で行います
+"""
+
 start_offset = 34934
 end_offset = 35479 - 1
 

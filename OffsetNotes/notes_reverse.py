@@ -1,11 +1,14 @@
 import Relium
 
+"""
+ノーツを反転します
+LNがある場合ノーツがLNに被るので注意が必要です
+"""
+
 osu_file = r""
 
 parse_file = Relium.parsefile(osu_file)
 parse_file.HitObjects.sort(key=lambda value: value.offset, reverse=False)
-
-#* THIS IS 4K ONLY!!!!!!!!!!!!!!!!!!! *#
 
 changed_hitobjects = list()
 current_notes_temp = list()

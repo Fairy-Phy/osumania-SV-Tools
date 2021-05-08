@@ -1,5 +1,10 @@
 from Relium import calcurate, classes, parser, constant
 
+"""
+1ノーツづつ止めます
+モードが2つあるので状況に合わせて
+"""
+
 source_file = r""
 
 target_start_offset = 125342
@@ -7,6 +12,7 @@ target_end_offset = 125479
 
 avgbpm = 220
 
+# おそらく間隔
 increase = 75
 
 beat = 4
@@ -17,7 +23,7 @@ effects = 0
 
 End_kiai = False
 
-# 0 => start zero, for end. 1 => from start, end undo
+# 0 => 0BPMからスタートして浮かしあり 1 => 開始ノーツからスタートして浮かしなし
 mode = 1
 
 ## Main ##

@@ -1,11 +1,13 @@
 from Relium import calcurate, classes, parser, constant
 
-# 作成中(調整中)
+"""
+判定ラインにノーツを持っていきます
+"""
 
 source_file = r""
 
-target_start_offset = 92479
-target_end_offset = 96570
+target_start_offset = 29730
+target_end_offset = 31830
 
 avgbpm = 220
 

@@ -1,3 +1,7 @@
+"""
+ゲルフォントの定数
+"""
+
 def gelfonds_constant(digit: int) -> str:
 	from sympy import N, I
 	return str(N("(-1) ** -I", digit))

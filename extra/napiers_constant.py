@@ -1,3 +1,7 @@
+"""
+ネイピア数
+"""
+
 def napiers_constant(digit: int) -> str:
 	from sympy import N, exp
 	return str(N("exp(1)", digit))

@@ -1,5 +1,9 @@
 from Relium import calcurate, export, classes
 
+"""
+intervalの間隔でstart_bpmからend_bpmの間をstart_offsetからend_offsetまでで加減速します
+"""
+
 start_offset = 3581
 end_offset = 13958
 

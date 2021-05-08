@@ -2,6 +2,11 @@ from Relium import calcurate, export, classes, parser
 from typing import List
 import math
 
+"""
+緑線でノーツ間を均等にします
+正直タイミングがつかめないのでプレイする側は最悪です
+"""
+
 source_file = r""
 aveBPM = 170
 

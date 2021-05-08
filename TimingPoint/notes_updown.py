@@ -1,12 +1,17 @@
 from Relium import calcurate, classes, parser, constant
 
+"""
+1ラインづつ上下していきます(polyriddim的なあれ)
+"""
+
 source_file = r""
 
-target_start_offset = 105570
-target_end_offset = 109115
+target_start_offset = 29730
+target_end_offset = 31830
 
-avgbpm = 220
+avgbpm = 200
 
+# ノーツの高さの最大値(上げすぎると見えなくなります)
 max_laneheight = 370
 
 beat = 4
@@ -15,7 +20,7 @@ sample_index = 0
 volume = 60
 effects = 0
 
-# 0 => up, 1 => down
+# 0 => 上に上げる, 1 => 下に下げる
 mode = 0
 
 ## Main ##

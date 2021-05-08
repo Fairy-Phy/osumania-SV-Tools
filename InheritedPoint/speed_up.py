@@ -1,5 +1,11 @@
 from Relium import calcurate, export, classes
 
+"""
+start_offsetからend_offsetの間でstart_scaleからend_scaleに速度変化を行います
+scaleの値によっては減速も可能です
+加速(減速)は1次関数のように行われます
+"""
+
 start_offset = 144570
 end_offset = 153297 - 1
 

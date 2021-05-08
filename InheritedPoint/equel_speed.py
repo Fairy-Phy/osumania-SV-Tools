@@ -1,5 +1,9 @@
 from Relium import calcurate, export, classes, parser
 
+"""
+バラバラなBPMをaveBPMを基準に速度を均等にします
+"""
+
 source_file = r""
 aveBPM = 145
 
